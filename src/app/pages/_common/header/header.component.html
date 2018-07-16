@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    
+    <!-- Navbar button -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nv">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink="/">Company Logo</a>
+    </div>
+
+    <!-- Navbar -->
+    <div class="collapse navbar-collapse" id="nv">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="/page1">Page 1</a></li>
+        <li routerLinkActive="active"><a routerLink="/page2">Page 2</a></li>
+          
+        <!-- dropdown -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Modals <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void()" (click)="dialog_open()" data-toggle="tab">Modal 1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a *ngIf="msg">{{msg}}</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
