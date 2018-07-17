@@ -1,3 +1,27 @@
 h2 {
   color: Navy;
 }
+
+.dragscroll2 {
+  width: 100%;
+  height: 800px;
+  min-height: 800px;
+  border: 1px solid Yellow;
+  overflow: scroll;
+
+  cursor: grab;
+  cursor : -o-grab;
+  cursor : -moz-grab;
+  cursor : -webkit-grab;
+}
+
+.kolona2 {
+  width: 130px;
+  min-width: 130px;
+  max-width: 130px;
+  height: 550px;
+  display: table-cell;
+  border: 2px solid #0f1fb8;
+  margin: 34px;
+  padding: 13px;
+}

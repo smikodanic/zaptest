@@ -2,7 +2,15 @@
     <div class="row">
         <div class="col-sm-12">
             <h2>{{title}}</h2>
-            <p>Some text in page 1 ...</p>
+            <p>Scroll by dragging <a href="https://github.com/bfwg/ngx-drag-scroll" target="_blank">https://github.com/bfwg/ngx-drag-scroll</a></p>
+
+            <drag-scroll class="dragscroll2">
+                <div class="kolona2" drag-scroll-item *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ">
+                  <h5>{{i}}</h5>
+                  Lorem ipsum ...
+                </div>
+            </drag-scroll>
+
         </div>
     </div>
 </section>

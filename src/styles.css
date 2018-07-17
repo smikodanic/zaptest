@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.dragscroll {
+  width: 100%;
+  height: 800px;
+  min-height: 800px;
+
+  overflow: scroll;
+
+  cursor: grab;
+  cursor : -o-grab;
+  cursor : -moz-grab;
+  cursor : -webkit-grab;
+}
+
+.kolona {
+  width: 340px;
+  min-width: 340px;
+  height: 550px;
+  display: table-cell;
+  border: 2px solid #ffccff;
+  margin: 34px;
+  padding: 13px;
+}
