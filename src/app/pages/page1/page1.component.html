@@ -2,14 +2,27 @@
     <div class="row">
         <div class="col-sm-12">
             <h2>{{title}}</h2>
-            <p>Scroll by dragging <a href="https://github.com/bfwg/ngx-drag-scroll" target="_blank">https://github.com/bfwg/ngx-drag-scroll</a></p>
+            <p>
+                Scroll by dragging <a href="https://github.com/bfwg/ngx-drag-scroll" target="_blank">https://github.com/bfwg/ngx-drag-scroll</a>.
+                <br>Dragging of background is disabled inside blue bordered boxes.
+            </p>
 
-            <drag-scroll class="dragscroll2">
-                <div class="kolona2" drag-scroll-item *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ">
-                  <h5>{{i}}</h5>
-                  Lorem ipsum ...
+
+            <drag-scroll [drag-scroll-disabled]="disableDrag_tf" (mousedown)="enableDrag()" class="tablex">
+
+                <div drag-scroll-item class="rowx">
+
+                    <div class="cellx" (mousedown)="disableDrag($event)" *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] ">
+                      <h5>{{i}}</h5>
+                      Disabled drag.
+                    </div>
+
                 </div>
+
             </drag-scroll>
+
+
+
 
         </div>
     </div>
